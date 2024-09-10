@@ -3,14 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Page</title>
+    <title>My Resume</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello, GitHub Pages!</h1>
-    <p>This is a simple webpage.</p>
-    <script src="script.js"></script>
+    <header>
+        <h1>My Resume</h1>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm [Your Name], a [Your Job Title] with experience in [Your Field].</p>
+    </section>
+    <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li>Job 1 at Company A - Description</li>
+            <li>Job 2 at Company B - Description</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can reach me at [Your Email].</p>
+    </section>
+    <section id="comments">
+        <h2>Comments</h2>
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = 'https://<your-github-username>.github.io/<your-repo>/'; // Replace with your page URL
+                this.page.identifier = 'resume-comments'; // Replace with a unique identifier for your page
+            };
+            (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://<your-disqus-shortname>.disqus.com/embed.js'; // Replace with your Disqus shortname
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </section>
+    <footer>
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    </footer>
 </body>
-</html>
-
 </html>

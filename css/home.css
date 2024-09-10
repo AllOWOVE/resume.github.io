@@ -1,9 +1,38 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f4;
     color: #333;
 }
 
-h1 {
-    color: #0056b3;
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1, footer p {
+    margin: 0;
+}
+
+section {
+    padding: 1em;
+    margin: 1em;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 0.5em 0;
 }
